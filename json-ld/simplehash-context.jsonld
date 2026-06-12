@@ -1,0 +1,92 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "aid": "https://apis.io/vocab/aid",
+    "simplehash": "https://simplehash.com/vocab/",
+    "nft": "https://schema.org/Thing",
+    "blockchain": "https://schema.org/Thing",
+    "token": "https://schema.org/Thing",
+    "chain": "simplehash:chain",
+    "chainId": "simplehash:chainId",
+    "contractAddress": "simplehash:contractAddress",
+    "tokenId": "simplehash:tokenId",
+    "tokenCount": "simplehash:tokenCount",
+    "floorPrice": "simplehash:floorPrice",
+    "floorPriceUsd": "simplehash:floorPriceUsd",
+    "marketplaceUrl": "simplehash:marketplaceUrl",
+    "ownerAddress": "simplehash:ownerAddress",
+    "ownerCount": "simplehash:ownerCount",
+    "spamScore": "simplehash:spamScore",
+    "imageUrl": "simplehash:imageUrl",
+    "previewImageUrl": "simplehash:previewImageUrl",
+    "metadataOriginalUrl": "simplehash:metadataOriginalUrl",
+    "collectionId": "simplehash:collectionId",
+    "collectionName": "simplehash:collectionName",
+    "transferFrom": "simplehash:transferFrom",
+    "transferTo": "simplehash:transferTo",
+    "transferTimestamp": "simplehash:transferTimestamp",
+    "transactionHash": "simplehash:transactionHash",
+    "blockNumber": "simplehash:blockNumber",
+    "fungibleId": "simplehash:fungibleId",
+    "priceUsd": "simplehash:priceUsd",
+    "marketCap": "simplehash:marketCap",
+    "volume24h": "simplehash:volume24h",
+    "webhookId": "simplehash:webhookId",
+    "webhookEvent": "simplehash:webhookEvent",
+    "cursor": "simplehash:cursor",
+    "nextCursor": "simplehash:nextCursor",
+    "NFT": {
+      "@id": "simplehash:NFT",
+      "@type": "@id"
+    },
+    "Collection": {
+      "@id": "simplehash:Collection",
+      "@type": "@id"
+    },
+    "Transfer": {
+      "@id": "simplehash:Transfer",
+      "@type": "@id"
+    },
+    "Owner": {
+      "@id": "simplehash:Owner",
+      "@type": "@id"
+    },
+    "Listing": {
+      "@id": "simplehash:Listing",
+      "@type": "@id"
+    },
+    "Bid": {
+      "@id": "simplehash:Bid",
+      "@type": "@id"
+    },
+    "FungibleToken": {
+      "@id": "simplehash:FungibleToken",
+      "@type": "@id"
+    },
+    "Webhook": {
+      "@id": "simplehash:Webhook",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://simplehash.com/",
+      "@type": "WebAPI",
+      "name": "SimpleHash NFT & Token API",
+      "description": "Multi-chain REST API providing NFT metadata, ownership, transfers, floor prices, listings, bids, spam scores, and fungible token market prices across 80+ blockchains and testnets.",
+      "url": "https://simplehash.com/",
+      "documentation": "https://docs.simplehash.com/",
+      "provider": {
+        "@type": "Organization",
+        "name": "SimpleHash",
+        "url": "https://simplehash.com/",
+        "sameAs": [
+          "https://github.com/simplehash",
+          "https://www.linkedin.com/company/simplehash/",
+          "https://x.com/SimpleHashInc"
+        ]
+      },
+      "note": "SimpleHash was acquired by Phantom Technologies. Standalone service shut down on 2025-03-27."
+    }
+  ]
+}
