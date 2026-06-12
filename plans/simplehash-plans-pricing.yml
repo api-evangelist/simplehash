@@ -1,0 +1,95 @@
+specificationVersion: "0.1"
+id: simplehash-plans-pricing
+name: SimpleHash API Plans & Pricing
+description: >-
+  SimpleHash offers tiered API plans for accessing NFT and token data across
+  80+ blockchains. Plans range from a free Starter tier for developers to
+  custom Enterprise arrangements. Note: SimpleHash was acquired by Phantom and
+  service was scheduled to shut down March 27, 2025.
+provider: simplehash
+url: https://simplehash.com/pricing
+plans:
+  - name: Starter
+    description: >-
+      Free plan for developers getting started with the SimpleHash API.
+      Provides access to all supported chains and testnets with limited
+      throughput.
+    price: 0
+    currency: USD
+    billingCycle: monthly
+    features:
+      - All supported chains and testnets
+      - REST API access
+      - Webhook support (up to 10)
+      - Email and community support
+    limits:
+      - name: Monthly API Calls
+        value: 25000
+        unit: requests
+      - name: Rate Limit
+        value: 100
+        unit: requests per minute
+      - name: Webhooks
+        value: 10
+        unit: webhooks
+    inclusions:
+      - REST API
+      - Webhooks
+    exclusions:
+      - Autoscaling
+      - Spam scores
+      - Committed use discounts
+      - Early access to features
+      - VIP support channels
+      - Dedicated account manager
+      - Custom SLAs
+  - name: Enterprise
+    description: >-
+      Custom plan for production-scale applications requiring high throughput,
+      advanced features, and enterprise-grade support. Pricing negotiated
+      based on usage volume and requirements.
+    price: custom
+    currency: USD
+    billingCycle: custom
+    features:
+      - All supported chains and testnets
+      - REST API access
+      - Custom webhook configuration
+      - Autoscaling
+      - Spam scores for NFT filtering
+      - Committed use discounts
+      - Early access to new features
+      - VIP Slack/Telegram support channel
+      - Dedicated account manager
+      - Custom SLAs
+      - Email support
+    limits:
+      - name: Monthly API Calls
+        value: custom
+        unit: requests
+      - name: Rate Limit
+        value: custom
+        unit: requests per minute
+      - name: Webhooks
+        value: custom
+        unit: webhooks
+    inclusions:
+      - REST API
+      - Webhooks
+      - Kafka Streaming (custom pricing)
+      - Bulk Service
+      - Chain Indexing Program access
+additionalServices:
+  - name: Bulk Service
+    description: >-
+      Custom pricing per chain and data topic for Kafka streaming, direct
+      database synchronization, S3 export, analytics, data retention, and
+      custom event indexing.
+    price: custom
+    currency: USD
+  - name: Chain Indexing Program
+    description: >-
+      Full chain indexing with subsidized developer plans, partner promotion,
+      and internal API access. Designed for blockchain ecosystems.
+    price: custom
+    currency: USD

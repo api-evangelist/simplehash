@@ -1,0 +1,92 @@
+specificationVersion: "1.0"
+id: simplehash-finops
+name: SimpleHash API FinOps
+description: >-
+  FinOps framework guidance for managing and optimizing spend on the SimpleHash
+  NFT and Token API. Applies FOCUS-aligned cost visibility principles to
+  blockchain data API consumption.
+provider: simplehash
+url: https://simplehash.com/pricing
+costModel:
+  type: tiered-subscription
+  description: >-
+    SimpleHash charges a flat monthly subscription based on plan tier, with
+    volume thresholds determining tier assignment. Enterprise plans may include
+    committed-use discounts negotiated upfront.
+  billingDimensions:
+    - name: API Requests
+      unit: requests
+      description: >-
+        Each REST API call, webhook delivery, or streaming event counts as
+        one billable request against the plan quota.
+    - name: Webhook Endpoints
+      unit: webhooks
+      description: >-
+        Number of active webhook subscriptions. Starter plan is capped at 10.
+    - name: Committed Use
+      unit: contract
+      description: >-
+        Enterprise customers can negotiate committed use discounts by
+        pre-committing to annual or multi-year volume.
+plans:
+  - name: Starter
+    monthlyCost: 0
+    currency: USD
+    includedRequests: 25000
+    costPerOverageRequest: N/A
+    notes: No overages — service stops or throttles at quota limit.
+  - name: Enterprise
+    monthlyCost: custom
+    currency: USD
+    includedRequests: custom
+    costPerOverageRequest: custom
+    notes: >-
+      Pricing negotiated based on monthly request volume, chain coverage,
+      streaming requirements, and support tier. Committed-use discounts
+      available for annual contracts.
+costOptimization:
+  - strategy: Use bulk endpoints
+    description: >-
+      Batch lookups (e.g., nfts/owners with multiple wallets) retrieve more
+      data per API call, reducing total request count for the same workload.
+  - strategy: Cache aggressively
+    description: >-
+      NFT metadata changes infrequently. Caching responses locally can reduce
+      repeat calls and keep consumption within plan limits.
+  - strategy: Filter by chain
+    description: >-
+      Scope requests to specific chains rather than querying all 80+ chains
+      when only a subset is needed, reducing response payload size.
+  - strategy: Right-size plan
+    description: >-
+      Monitor monthly consumption in the developer portal. Move to a higher
+      plan only when consistently approaching quota limits.
+  - strategy: Negotiate committed use
+    description: >-
+      Enterprise customers with predictable volume should negotiate annual
+      committed-use contracts for significant per-request cost reductions.
+visibility:
+  - tool: SimpleHash Developer Portal
+    url: https://simplehash.com/
+    description: >-
+      Track API usage, request volume, webhook delivery statistics, and
+      remaining quota through the SimpleHash developer dashboard.
+  - tool: Rate-Limit Response Headers
+    description: >-
+      X-RateLimit-Limit, X-RateLimit-Remaining, and X-RateLimit-Reset headers
+      provide real-time visibility into quota consumption per request.
+allocation:
+  - dimension: Team / API Key
+    description: >-
+      Issue separate API keys per team or application to attribute costs and
+      usage to individual projects within the organization.
+  - dimension: Chain / Data Type
+    description: >-
+      Log which chains and endpoint types are called to understand cost
+      drivers and identify optimization opportunities.
+tags:
+  - NFT
+  - Blockchain
+  - Web3
+  - API Cost Management
+  - FOCUS

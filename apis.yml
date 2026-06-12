@@ -1,0 +1,77 @@
+aid: simplehash
+name: SimpleHash
+description: >-
+  NFT data API aggregating metadata, ownership, transfers, floor prices, and
+  token market data across 80+ blockchains. Provides REST API, webhooks, and
+  Kafka streaming used by wallets, marketplaces, and analytics platforms
+  including Coinbase, Phantom, Ledger, and Uniswap. Indexes 3B+ tokens and
+  NFTs with 99.999% uptime SLA.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/simplehash/refs/heads/main/apis.yml
+created: "2026-06-12"
+modified: "2026-06-12"
+specificationVersion: "0.19"
+tags:
+  - NFT
+  - Blockchain
+  - Web3
+  - Cryptocurrency
+  - Token
+  - Metadata
+  - Multi-chain
+  - Ethereum
+  - Solana
+  - Base
+  - Polygon
+apis:
+  - aid: simplehash:nft-api
+    name: SimpleHash NFT & Token API
+    description: >-
+      Multi-chain REST API providing NFT metadata, ownership, transfers, floor
+      prices, listings, bids, spam scores, and fungible token market prices
+      across 80+ blockchains and testnets. Supports bulk lookups, automatic
+      metadata refresh, and cached media previews.
+    humanURL: https://simplehash.com/
+    baseURL: https://api.simplehash.com/api/v0
+    tags:
+      - NFT
+      - Token
+      - Blockchain
+      - Metadata
+      - Ownership
+      - Floor Price
+    properties:
+      - type: Documentation
+        url: https://docs.simplehash.com/
+      - type: OpenAPI
+        url: https://docs.simplehash.com/reference/overview
+    contact:
+      - FN: SimpleHash Support
+        email: support@simplehash.com
+common:
+  - type: Website
+    url: https://simplehash.com/
+  - type: Documentation
+    url: https://docs.simplehash.com/
+  - type: GitHub
+    url: https://github.com/simplehash
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/simplehash/
+  - type: Blog
+    url: https://simplehash.com/blog
+  - type: Pricing
+    url: https://simplehash.com/pricing
+  - type: StatusPage
+    url: https://simplehash.betteruptime.com/
+  - type: X
+    url: https://x.com/SimpleHashInc
+  - type: Plans
+    url: plans/simplehash-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/simplehash-rate-limits.yml
+  - type: FinOps
+    url: finops/simplehash-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

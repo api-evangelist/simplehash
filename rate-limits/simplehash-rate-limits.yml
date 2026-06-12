@@ -1,0 +1,64 @@
+specificationVersion: "0.1"
+id: simplehash-rate-limits
+name: SimpleHash API Rate Limits
+description: >-
+  SimpleHash enforces per-minute request rate limits based on subscription
+  plan. Authentication is via the X-Api-Key HTTP header. All requests must
+  use HTTPS against the base URL https://api.simplehash.com/api/v0.
+provider: simplehash
+url: https://docs.simplehash.com/
+authentication:
+  - type: apiKey
+    in: header
+    name: X-Api-Key
+    description: >-
+      API key passed in the X-Api-Key HTTP request header on every call.
+      Keys are obtained through the SimpleHash developer portal.
+tiers:
+  - plan: Starter
+    limits:
+      - scope: global
+        window: 1
+        windowUnit: minute
+        maxRequests: 100
+        notes: >-
+          Free tier capped at 100 requests per minute across all endpoints.
+      - scope: monthly
+        window: 1
+        windowUnit: month
+        maxRequests: 25000
+        notes: >-
+          Monthly quota of 25,000 total API requests. Resets at the start
+          of each billing period.
+  - plan: Enterprise
+    limits:
+      - scope: global
+        window: 1
+        windowUnit: minute
+        maxRequests: custom
+        notes: >-
+          Custom rate limits negotiated based on expected traffic volume
+          and use case. Autoscaling is included.
+      - scope: monthly
+        window: 1
+        windowUnit: month
+        maxRequests: custom
+        notes: Custom monthly quota defined in enterprise contract.
+headers:
+  rateLimitHeaders:
+    - name: X-RateLimit-Limit
+      description: Maximum requests allowed in the current window.
+    - name: X-RateLimit-Remaining
+      description: Requests remaining in the current rate-limit window.
+    - name: X-RateLimit-Reset
+      description: Unix timestamp when the current rate-limit window resets.
+errorCodes:
+  - code: 429
+    description: >-
+      Too Many Requests — the client has exceeded the rate limit for its
+      plan. Retry after the window specified in the Retry-After header.
+bestPractices:
+  - Implement exponential back-off when receiving 429 responses.
+  - Use bulk lookup endpoints to maximize data retrieved per request.
+  - Cache responses locally where data freshness allows.
+  - Monitor usage in the SimpleHash developer portal to avoid quota exhaustion.
