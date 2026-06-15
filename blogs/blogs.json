@@ -47,5 +47,14 @@
       "url": "https://simplehash.com/blog/evm-token-swap-parsing-live",
       "date": "2024-12-06"
     }
-  ]
+  ],
+  "repo": "simplehash",
+  "feeds": [
+    {
+      "source": "https://www.linkedin.com/company/simplehash/",
+      "error": "HTTPError"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-06-14T20:42:17Z"
 }
