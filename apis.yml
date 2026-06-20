@@ -7,7 +7,7 @@ description: >-
   including Coinbase, Phantom, Ledger, and Uniswap. Indexes 3B+ tokens and
   NFTs with 99.999% uptime SLA.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/simplehash/refs/heads/main/apis.yml
 created: "2026-06-12"
 modified: "2026-06-12"
