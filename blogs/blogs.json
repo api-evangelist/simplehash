@@ -1,60 +1,14 @@
 {
-  "aid": "simplehash",
-  "name": "SimpleHash Blog",
-  "description": "Blog feed tracking for SimpleHash. No RSS or Atom feed was found on the blog page. Blog posts are served at https://simplehash.com/blog. Note: SimpleHash was acquired by Phantom and its standalone service shut down on 2025-03-27.",
-  "url": "https://simplehash.com/blog",
-  "rss": null,
-  "rssConfirmed": false,
-  "lastChecked": "2026-06-12",
-  "posts": [
-    {
-      "title": "SimpleHash Acquisition by Phantom",
-      "url": "https://simplehash.com/blog/simplehash-acquisition-by-phantom",
-      "date": "2025-02-27"
-    },
-    {
-      "title": "Sui x SimpleHash",
-      "url": "https://simplehash.com/blog/sui-x-simplehash",
-      "date": "2025-01-14"
-    },
-    {
-      "title": "Building Custom Functions for Virtuals Protocol Using the SimpleHash API",
-      "url": "https://simplehash.com/blog/building-custom-functions-for-virtuals-protocol-using-the-simplehash-api",
-      "date": "2025-01-09"
-    },
-    {
-      "title": "Delegate x SimpleHash - Powering the PENGU Airdrop",
-      "url": "https://simplehash.com/blog/delegate-x-simplehash---powering-the-pengu-airdrop",
-      "date": "2025-01-07"
-    },
-    {
-      "title": "Liquidity & Bonding Curve Progress Now Live",
-      "url": "https://simplehash.com/blog/liquidity-bonding-curve-progress-now-live",
-      "date": "2025-01-03"
-    },
-    {
-      "title": "Why Crypto Devs Should Pay Attention to Fluent",
-      "url": "https://simplehash.com/blog/why-crypto-devs-should-pay-attention-to-fluent-the-first-blended-execution-network",
-      "date": "2024-12-23"
-    },
-    {
-      "title": "Mantle Live on SimpleHash",
-      "url": "https://simplehash.com/blog/mantle-live-on-simplehash",
-      "date": "2024-12-20"
-    },
-    {
-      "title": "EVM Token Swap Parsing Live",
-      "url": "https://simplehash.com/blog/evm-token-swap-parsing-live",
-      "date": "2024-12-06"
-    }
-  ],
   "repo": "simplehash",
   "feeds": [
     {
-      "source": "https://www.linkedin.com/company/simplehash/",
-      "error": "HTTPError"
+      "source": "https://simplehash.com/blog",
+      "feed_url": "",
+      "saved": 0,
+      "method": "agent-scrape"
     }
   ],
+  "fetched": "2026-06-27T13:09:48Z",
   "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "agent_pulled": "2026-06-27"
 }
