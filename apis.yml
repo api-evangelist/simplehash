@@ -50,6 +50,10 @@ apis:
       - FN: SimpleHash Support
         email: support@simplehash.com
 common:
+  - type: VulnerabilityDisclosure
+    url: security/simplehash-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/simplehash-domain-security.yml
   - type: Website
     url: https://simplehash.com/
   - type: Documentation
