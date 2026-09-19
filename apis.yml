@@ -40,7 +40,7 @@ tags:
   - Blockchain
   - Web3
   - Cryptocurrency
-  - Token
+  - Tokens
   - Metadata
   - Multi-Chain
   - Ethereum
@@ -70,6 +70,13 @@ apis:
     humanURL: https://simplehash.com/
     baseURL: https://api.simplehash.com/api/v0
     tags:
+      - NFT
+      - Tokens
+      - Blockchain
+      - Metadata
+      - Ownership
+      - Floor Price
+    tags_raw:
       - NFT
       - Token
       - Blockchain
