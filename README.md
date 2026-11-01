@@ -1,4 +1,4 @@
-# SimpleHash (simplehash)
+# SimpleHash
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,70 +64,112 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-SimpleHash is an NFT data API aggregating metadata, ownership, transfers, floor prices, and token market data across 80+ blockchains. The platform provides REST API, webhook, and Kafka streaming access to 3B+ indexed tokens and NFTs, and is used at production scale by Coinbase, Phantom, Ledger, Uniswap, Rainbow, and many other leading wallets, marketplaces, and analytics platforms.
+NFT data API aggregating metadata, ownership, transfers, floor prices, and token market data across 80+ blockchains. Provides REST API, webhooks, and Kafka streaming used by wallets, marketplaces, and analytics platforms including Coinbase, Phantom, Ledger, and Uniswap. Indexes 3B+ tokens and NFTs with 99.999% uptime SLA.
 
-APIs.json: https://raw.githubusercontent.com/api-evangelist/simplehash/refs/heads/main/apis.yml
+**Areas:** NFT · Blockchain · Web3 · Cryptocurrency · Tokens · Metadata · Multi-Chain · Ethereum · Solana · Base · Polygon
 
-Naftiko: https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=simplehash-api-evangelist&utm_content=repo
+## SimpleHash on APIs.io
 
----
+Everything profiled for SimpleHash is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/simplehash/](https://apis.io/providers/simplehash/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (1)
 
-NFT, Blockchain, Web3, Cryptocurrency, Token, Metadata, Multi-chain, Ethereum, Solana, Base, Polygon
+- [SimpleHash NFT & Token API](https://apis.io/apis/simplehash/nft-api/) — Multi-chain REST API providing NFT metadata, ownership, transfers, floor prices, listings, bids, spam scores, and fungible token market prices across 80+…
 
----
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-| Name | Base URL | Description |
-|------|----------|-------------|
-| SimpleHash NFT & Token API | https://api.simplehash.com/api/v0 | Multi-chain REST API for NFT metadata, ownership, transfers, floor prices, listings, bids, spam scores, and fungible token market prices across 80+ blockchains. |
+#### JSON-LD (1)
 
----
+Linked-data contexts for the provider's vocabulary.
 
-## Plans / Rate Limits / FinOps
+- [Simplehash Context](https://apis.io/jsonld/simplehash/simplehash-context/)
 
-| Resource | File |
-|----------|------|
-| Plans & Pricing | [plans/simplehash-plans-pricing.yml](plans/simplehash-plans-pricing.yml) |
-| Rate Limits | [rate-limits/simplehash-rate-limits.yml](rate-limits/simplehash-rate-limits.yml) |
-| FinOps | [finops/simplehash-finops.yml](finops/simplehash-finops.yml) |
+#### Security (2)
 
-**Plans summary:**
-- **Starter** — Free, 25,000 requests/month, 100 requests/minute, up to 10 webhooks
-- **Enterprise** — Custom pricing, custom rate limits, autoscaling, spam scores, dedicated support, committed-use discounts
+Authentication, trust centre, and vulnerability disclosure.
 
-**Authentication:** API key passed in the `X-Api-Key` HTTP header on every request.
+- [Simplehash Domain Security](https://apis.io/security/simplehash/simplehash-domain-security/)
+- [Simplehash Vulnerability Disclosure](https://apis.io/security/simplehash/simplehash-vulnerability-disclosure/)
 
----
+#### Plans and pricing (1)
 
-## Timestamps
+Published plans, tiers and prices.
 
-| Field | Value |
-|-------|-------|
-| Created | 2026-06-12 |
-| Modified | 2026-06-12 |
+- [Simplehash Plans Pricing](https://apis.io/plans/simplehash/simplehash-plans-pricing/)
 
----
+#### Rate limits (1)
 
-## Common
+Published request limits.
 
-| Type | URL |
-|------|-----|
-| Website | https://simplehash.com/ |
-| Documentation | https://docs.simplehash.com/ |
-| GitHub | https://github.com/simplehash |
-| LinkedIn | https://www.linkedin.com/company/simplehash/ |
-| Blog | https://simplehash.com/blog |
-| Pricing | https://simplehash.com/pricing |
-| Status Page | https://simplehash.betteruptime.com/ |
-| X (Twitter) | https://x.com/SimpleHashInc |
+- [Simplehash Rate Limits](https://apis.io/rate-limits/simplehash/simplehash-rate-limits/)
 
----
+#### FinOps (1)
 
-## Maintainers
+What the API costs to run, by operation.
 
-| Name | Email |
-|------|-------|
-| Kin Lane | kin@apievangelist.com |
+- [Simplehash Finops](https://apis.io/finops/simplehash/simplehash-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://simplehash.com/)
+- [Documentation](https://docs.simplehash.com/)
+- [Pricing](https://simplehash.com/pricing)
+- [Blog](https://simplehash.com/blog)
+- [Status](https://simplehash.betteruptime.com/)
+
+## API Evangelist rating
+
+**Kin Score 20.8** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 34.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 5.3 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 15.8 |
+
+**Agent readiness 13.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 16.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/simplehash/](https://apis.io/providers/simplehash/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for SimpleHash: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/simplehash/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
